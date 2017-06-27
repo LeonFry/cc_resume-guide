@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Creative Circle - Interactive Resume Guide</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/d44fa9/00000000000000003b9ad1b1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.com/af/d44fa9/00000000000000003b9ad1b1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.com/af/d44fa9/00000000000000003b9ad1b1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/b7d7c0/00000000000000003b9ad1b2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.com/af/b7d7c0/00000000000000003b9ad1b2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.com/af/b7d7c0/00000000000000003b9ad1b2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/04fb9d/00000000000000003b9ad1b9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.com/af/04fb9d/00000000000000003b9ad1b9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.com/af/04fb9d/00000000000000003b9ad1b9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/8f1252/00000000000000003b9ad1ba/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.com/af/8f1252/00000000000000003b9ad1ba/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.com/af/8f1252/00000000000000003b9ad1ba/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:museo;src:url(https://use.typekit.com/af/d95339/000000000000000000011b23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.com/af/d95339/000000000000000000011b23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.com/af/d95339/000000000000000000011b23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo;src:url(https://use.typekit.com/af/ebcccc/000000000000000000011b24/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.com/af/ebcccc/000000000000000000011b24/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.com/af/ebcccc/000000000000000000011b24/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo;src:url(https://use.typekit.com/af/9802e0/00000000000000000000ebe4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.com/af/9802e0/00000000000000000000ebe4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.com/af/9802e0/00000000000000000000ebe4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:museo;src:url(https://use.typekit.com/af/9b0830/00000000000000000000ebe6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.com/af/9b0830/00000000000000000000ebe6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.com/af/9b0830/00000000000000000000ebe6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div class="side-nav">	
+	<div class="prompt-section">
+		
+		<div id="prompt-1" class="prompt_wrapper">
+			<div>
+				<h2>Welcome</h2>
+			</div>
+			<div>
+				<ul>
+					<li id="prompt-1_bullet-1" class="prompt-bullet_active">Welcome to our interactive resume experience.</li>
+					<li id="prompt-1_bullet-2" class="prompt-bullet_active">We will guide you through what to look for when reviewing.</li>
+					<li id="prompt-1_bullet-3" class="prompt-bullet_active">Feel free to print as is, or go through the experience with us. We’ll throw in some extra, helpful tips along the way.</li>
+				</ul>
+				<p id="button_continue-1" class="side-nav_button prompt_button">CONTINUE</p>
+			</div>
+		</div>
+		
+		<div id="prompt-2" class="prompt_wrapper prompt_hidden">
+			<div>
+				<h2>Welcome</h2>
+			</div>
+			<div>
+				<ul>
+					<li id="prompt-2_bullet-1" class="prompt-bullet_active prompt-bullet_inactive">Finding the right candidate for your team is tough.</li>
+					<li id="prompt-2_bullet-2" class="prompt-bullet_active prompt-bullet_inactive">Our interactive resume guide makes it easy.</li>
+					<li id="prompt-2_bullet-3" class="prompt-bullet_active prompt-bullet_inactive">We interview and review resumes + portfolios of more than 2,000 candidates a week. Let us help.</li>
+					<li id="prompt-2_bullet-4" class="prompt-bullet_active prompt-bullet_inactive">Let’s get started, section by section.</li>
+				</ul>
+				<p id="button_continue-2" class="side-nav_button prompt_button">START</p>
+			</div>
+		</div>
+		
+		<div id="prompt-3" class="prompt_wrapper prompt_hidden">
+			<div>
+				<h2>Did you know?</h2>
+			</div>
+			<div>
+				<ul>
+					<li id="prompt-3_bullet-1" class="prompt-bullet_active prompt-bullet_inactive">
+						Listing a physical address is still necessary in this day and age.
+					</li>
+					<li id="prompt-3_bullet-2" class="prompt-bullet_active prompt-bullet_inactive">
+						It clarifies if the candidate is local, scheduling interviews a breeze and – for freelance – immediate starts a breeze.
+					</li>
+					<li id="prompt-3_bullet-3" class="prompt-bullet_active prompt-bullet_inactive">
+						Don’t pass on out-of-state candidates! They can work off-site if they are a better fit for your need than a local candidate.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="prompt-4" class="prompt_wrapper prompt_hidden">
+			<div>
+				<h2>Did you know?</h2>
+			</div>
+			<div>
+				<ul>
+					<li id="prompt-4_bullet-1" class="prompt-bullet_active prompt-bullet_inactive">
+						Recruiters spend an average of <b>five to seven seconds</b> reviewing a resume, before taking next steps with a candidate.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="prompt-5" class="prompt_wrapper prompt_hidden">
+			<div>
+				<h2>Nice Job!</h2>
+			</div>
+			<div>
+				<ul>
+					<li id="prompt-5_bullet-1" class="prompt-bullet_active prompt-bullet_inactive">
+						<p>One resume down! Print, share or go through the experience again.</p> 
+						<p>For more information on <b>Creative Circle</b>, visit <a href="#">www.creativecircle.com</a>.</p>
+						<p>Need talent? Fill out a form or call XXX-XXX-XXXX.</p>
+					</li>
+				</ul>
+				<p id="button_continue-end" class="side-nav_button prompt_button">START AGAIN</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="side-nav_footer">
+		<div class="secondary-controls">
+		<div class="side-nav_button side-nav_share_button">
+					 <a>PRINT</a>
+		</div>
+				<div class="side-nav_button side-nav_share_button">
+					 <a>SHARE</a>
+		</div>
+	</div>
+	</div>
+		</div>
+		<div class="spacer"></div>
+<div class="content-body">
+	<div class="left-side">
+		<div class="candidate-name">
+			<h1><span class="cc_circle"><img src="images/cc_circle.png"></span> First & Last name</h1>
+		</div>
+		<div id="section-1" class="section candidate-address">
+			<p>Current address</p>
+			<p>5900 Wilshire, Los Angeles, CA 90036</p>
+		</div>
+		<div id="section-1_controls" class="main-controls prompt_hidden">
+			<ul>
+				<li>
+					<div id="section-1_back-button" class="side-nav_button side-nav_button_back side-nav_button_inactive">
+						<p>BACK</p>
+					</div>
+				</li>
+				<li>
+					<div id="section-1_next-button" class="side-nav_button side-nav_button_next">
+						<p>NEXT</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div >
+			<h1>Professional Summary</h1>
+			<div id="section-3" class="left-side_inner">
+				<p>The resume should be well-designed and easy to read (utilizes white space, has a typographic hierarchy, shows creativity but avoids distracting layouts, fonts, etc.). Includes only the most vital information needed to sell skills and highlight achievements. Important details take priority, followed by information that helps tell their story. Includes relevant keywords that tie to the job description.</p>
+			</div>
+			<div id="section-3_controls" class="main-controls prompt_hidden">
+				<ul>
+					<li>
+						<div id="section-3_back-button" class="side-nav_button side-nav_button_back">
+							<p>BACK</p>
+						</div>
+					</li>
+					<li>
+						<div id="section-3_next-button" class="side-nav_button side-nav_button_next">
+							<p>DONE</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+		<h1>Education</h1>
+			<h2>College or related certificate program</h2>
+			<div class="left-side_inner">
+				<span class="candidate-address">
+					<p>May 2005</p>
+				</span>
+				<h3>Degree or courses in related field</h3>
+				<p>If a junior candidate, related courses and projects can go here Junior candidates should also put this education field at the top of their resume</p>
+			</div>
+		</div>
+	</div>
+	<div class="right-side">
+		<div class="candidate-title">
+			<h2>Professional Title</h2>
+		</div>
+		<div id="section-2" class="section candidate-contact">
+			<p><i class="fa fa-phone"></i> : Contact Information Includes</p>
+			<p><i class="fa fa-envelope"></i> : a professional email address</p>
+			<p><i class="fa fa-link"></i> : a link to a digital portfolio, website</p>
+			<p><i class="fa  fa-linkedin"></i> : a link to a LinkedIn profile</p>
+		</div>
+		<div id="section-2_controls" class="main-controls main-controls_right prompt_hidden">
+			<ul>
+				<li>
+					<div id="section-2_back-button" class="side-nav_button side-nav_button_back">
+						<p>BACK</p>
+					</div>
+				</li>
+				<li>
+					<div id="section-2_next-button" class="side-nav_button side-nav_button_next">
+						<p>NEXT</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="">
+		<h1>Experience</h1>
+			<div class="section-4 candidate-job">
+				<h2>Most recent job is the most important</h2>
+				<span class="candidate-address">
+					<p >At least one year ago to present</p>
+				</span>
+				<h3>Directly relevant position</h3>
+				<p>Results and impact are listed in clear bullet points</p>
+				<p>Uses as many metrics, stats, and figures as possible to illustrate performance</p>
+			</div>
+			<div class="section-5 candidate-job">
+				<h2>The job before that</h2>
+				<span class="candidate-address">
+					<p>There may be a gap between jobs and that’s OK</p>
+				</span>
+				<h3>Relevant position</h3>
+				<p>There should be a natural – and upward – progression in career path</p>
+				<p>Customized to suit the prospective position or company</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+#prompt-1_controls {
+	display: none;
+	transition: 1s;
+}
+
+body {
+	margin: 0;
+}
+h1, h2, h3 {
+	font-family: 'museo';
+	font-weight: 100;
+}
+h1 {
+	border-bottom: #69cbdb 2px solid;
+	color: #ee2c38;
+	font-size: 40px;
+}
+h2 {
+	font-size: 30px;
+}
+.candidate-title h2 {
+	border-bottom: #69cbdb 2px solid;
+}
+.candidate-job h3 {
+	margin-bottom: 10px;
+}
+a, p, li {
+	font-family: 'proxima-nova';
+	font-size: 15px;
+	margin: 0;
+}
+fa-icon {
+	font-family: 'font-awesome';
+}
+.candidate-address p {
+	font-family: 'proxima-nova';
+	font-style: italic;
+	color: #7d868c;
+}
+.candidate-contact p {
+	font-family: 'proxima-nova';
+	color: #7d868c;
+}
+.filler-content {
+	padding: 20px;
+}
+
+.content-body {
+	margin-left: 30%;
+	width: 70%;
+	/*background-image: url("https://4aoziq-sn3301.files.1drv.com/y4mX54Hfvxl6vpf_nAWTG4jkU5lRhP-tI3Gk0er9LwsfDTLVdtZN72W8Xd1hfyJ6nJ-BD1HM14VCgRIMoeSeSrpr_FxM0pBZpsdoRXUqfFPQCIO-_Oi9VndXT66GvnKnn-9e0oeqX11Qkek61Jdv8txFH99ljQW0M9os6ltoEYcAlzqABLDiRLUX5Sekxq6_rc2kGMV7sCks0lZ1qbPpLC0jQ?width=1280&height=1316&cropmode=none");
+	background-size: contain;
+	background-repeat: no-repeat;*/
+}
+.side-nav {
+	position: fixed;
+	background-color: #5b6870;
+	height: 100%;
+	width: 30%;
+}
+.main-controls {
+	border-bottom: solid 1px #fff;
+	padding-bottom: 10px;
+	text-align: right;
+}
+.main-controls_right {
+	text-align: left;
+}
+.main-controls ul {
+	margin: 0;
+	padding: 0;
+}
+.main-controls li {
+	display: inline;
+	list-style: none;
+}
+.secondary-controls {
+	text-align: center;
+	margin-top: 5px;
+}
+.side-nav_button {
+	display: inline-block;
+	background: #ee2c38;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 30%;
+	cursor: pointer;
+}
+.side-nav_button:hover {
+	background: #69cbdb;
+}
+.side-nav_button_inactive {
+	background:#7d868c;
+	color: #a3a9ac;
+	cursor: default;
+}
+.side-nav_button_inactive:hover {
+	background: #7d868c;
+}
+.side-nav_button_tip {
+	margin-right:1%;
+	margin-left: 2%;
+}
+/*.side-nav_button_back {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+.side-nav_button_next {
+	margin-left:1%;
+} */
+
+.side-nav_share_button {
+	background: none;
+	border: 2px solid #fff;
+	padding: 5px;
+	margin: 5px;
+	width: 20%;
+}
+
+.prompt_wrapper h2 {
+	color: #fff;
+	margin-left: 40px;
+}
+.prompt_wrapper ul {
+	padding-left: 0;
+	padding-right: 2%;
+}
+.prompt_wrapper li {
+	background: #fff;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-left: 40px;
+	transition: 1s;
+}
+.prompt_hidden {
+	display: none
+}
+
+.prompt-bullet_active {
+	left: 0;
+	position: relative;
+}
+
+.prompt-bullet_inactive {
+	left: -100%;
+}
+
+.prompt_button {
+	width: 96%;
+	margin-right: 2%;
+	margin-left: 2%;
+	
+}
+.side-nav_footer {
+	color: #fff;
+	width: 98%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 10px;
+}
+.side-nav_footer p {
+	font-family: 'museo';
+	font-size: 10px;
+}
+.logo-block {
+	background-image: url("http://ournotebook.creativecircle.com/wp-content/uploads/2015/12/Creative-Circle-Logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 95%;
+	margin-left: 5%;
+}
+.copyright-block {
+	display: inline-block;
+	width: 95%;
+	text-align: left;
+	margin-left: 5%;
+}
+.left-side {
+	display: inline-block;
+	width: 55%;
+	text-align: right;
+	margin-right: 5%;
+	vertical-align: top;
+}
+.left-side_inner {
+	margin-left: 30%;
+}
+.right-side {
+	display: inline-block;
+	width: 39%;
+	text-align: left;
+	vertical-align: top;
+}
+.candidate-job {
+	margin-bottom: 50px;
+}
+.section {
+	border: 1px hidden;
+	transition: 1s;
+}
+
+.highlight-left {
+	border: 2px #5b6870 solid;
+	border-bottom: 5px #5b6870 solid;
+	padding: 5px;
+	margin-left: 30%;
+}
+.highlight-right {
+	border: 2px #5b6870 solid;
+	border-bottom: 5px #5b6870 solid;
+	padding: 5px;
+}
+.cc_circle {
+	display: inline;
+}
